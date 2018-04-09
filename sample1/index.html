@@ -1,215 +1,205 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    </head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
 
 <script type="text/javascript">
-  $(document).ready(function(){
-    $('.carousel.carousel-slider').carousel({
-      numVisible: 1,
-      fullwidth: true,
-      indicators: true
+    $(document).ready(function() {
+        $('.carousel.carousel-slider').carousel({
+            numVisible : 1,
+            fullwidth : true,
+            indicators : true
+        });
+        $(".dropdown-trigger").dropdown({
+            constrainWidth : false
+        });
+        setTimeout(autoplay, 7500);
     });
-    $(".dropdown-trigger").dropdown();
-    autoplay();
-  });
-  function autoplay() {
-    $('.carousel.carousel-slider').carousel('next');
-    setTimeout(autoplay, 7500);
-  }
+    function autoplay() {
+        $('.carousel.carousel-slider').carousel('next');
+        setTimeout(autoplay, 7500);
+    }
 </script>
 
-    <body>
+<body>
 
-<!-- header part -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>
-<nav>
-  <div class="nav-wrapper amber lighten-2">
-    <a href="#!" class="center brand-logo">Logo</a>
-    <ul class="right">
-      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="large material-icons">dehaze</i></a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- header part -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">About our studio</a></li>
+    <li><a href="#!">Lesson Informations</a></li>
+    <li><a href="#!">Schedules</a></li>
+    <li><a href="#!">Access</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper amber lighten-2">
+      <a href="#!" class="center brand-logo">dinacharya yoga</a>
+      <ul class="right">
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="large material-icons">dehaze</i></a></li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- info(commercial) with carousel -->
-<div class="carousel carousel-slider">
-  <div class="carousel-item">
-    <div class="row center">
-      <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height:300px;">
+  <!-- info(commercial) with carousel -->
+  <div class="carousel carousel-slider">
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>新規会員募集中です！</h5>
+          <p>見学、お問合せ、いつでもお受けいたします！どうぞお気軽にご連絡ください。</p>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12" style="background-color: #EEEEEE;">
-        <h5>cm1</h5>
-        <p>paragraph for commercial</p>
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>こんなレッスンもやってます</h5>
+          <p>色んな講師による色んなクラス。自分に合うクラスを探してみませんか？</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="carousel-item">
-    <div class="row center">
-      <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height:300px;">
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>H30年度スケジュールを更新しました</h5>
+          <p>スケジュールの方が更新されました。予約等の際にはご確認をお願いします。</p>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12">
-        <h5>cm2</h5>
-        <p>paragraph for commercial</p>
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>ブログやインスタもやってます</h5>
+          <p>講師やスタッフによるブログ、インスタの更新を行なっています。スタジオの雰囲気を少しでもお届けできれば幸いです。</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="carousel-item">
-    <div class="row center">
-      <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height:300px;">
+    <div class="carousel-item">
+      <div class="row center">
+        <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height: 300px;"></div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col s12">
-        <h5>cm3</h5>
-        <p>paragraph for commercial</p>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <div class="row center">
-      <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height:300px;">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12">
-        <h5>cm4</h5>
-        <p>paragraph for commercial</p>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <div class="row center">
-      <div class="col s12" style="background: url('images/sample-1.jpg'); background-repeat: no-repeat; background-size: cover; height:300px;">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12">
-        <h5>cm5</h5>
-        <p>paragraph for commercial</p>
+      <div class="row">
+        <div class="col s12">
+          <h5>cm5</h5>
+          <p>paragraph for commercial</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="divider"></div>
+  <div class="divider"></div>
 
-<!-- static menus -->
-<div class="row">
-  <div class="col s1 m3"></div>
-  <div class="col s5 m3">
+  <!-- static menus -->
+  <div class="row">
+    <div class="col s1 m3"></div>
+    <div class="col s5 m3">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">About this studio</span>
+          <img src="images/sample-1.jpg"> <span class="card-title">About our studio</span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>三鷹にてヨガスタジオをやっています。詳細はこちら。</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-  </div>
-  </div>
-  <div class="col s5 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Lesson Schedules</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">studioについて</a>
         </div>
       </div>
-  </div>
-  <div class="col s1 m3"></div>
-</div>
-<div class="row">
-  <div class="col s1 m3"></div>
-  <div class="col s5 m3">
+    </div>
+    <div class="col s5 m3">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">About this studio</span>
+          <img src="images/sample-1.jpg"> <span class="card-title">Lesson Informations</span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>スタジオでは様々なヨガ教室を開催しています。各クラスの詳細については下記のリンク先を参照してください。</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-  </div>
-  </div>
-  <div class="col s5 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Lesson Schedules</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">レッスンについて</a>
         </div>
       </div>
+    </div>
+    <div class="col s1 m3"></div>
   </div>
-  <div class="col s1 m3"></div>
-</div>
+  <div class="row">
+    <div class="col s1 m3"></div>
+    <div class="col s5 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg"> <span class="card-title">Schedules</span>
+        </div>
+        <div class="card-content">
+          <p>各クラスのスケジュールはこちらからご確認ください。</p>
+        </div>
+        <div class="card-action">
+          <a href="#">スケジュールへ</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s5 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg"> <span class="card-title">Access</span>
+        </div>
+        <div class="card-content">
+          <p>スタジオの場所はこちらからご確認ください。</p>
+        </div>
+        <div class="card-action">
+          <a href="#">地図を開く</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s1 m3"></div>
+  </div>
 
-<!-- footer -->
-        <footer class="page-footer amber lighten-2">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            (C) 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-      <!--JavaScript at end of body for optimized loading-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    </body>
-  </html>
+  <!-- footer -->
+  <footer class="page-footer amber lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">dinacharya yoga stuio</h5>
+          <p class="grey-text text-lighten-4">subtitle (if there is any...)</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">About out studio</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Lesson Informations</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Schedules</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Access</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Blog</a>(外部サイトへ移動します)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        (C) 2014 Copyright dinacharya yoga studio
+      </div>
+    </div>
+  </footer>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>

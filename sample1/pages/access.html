@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".dropdown-trigger").dropdown({
+            constrainWidth : false
+        });
+    });
+</script>
+
+<body>
+
+  <!-- header part -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">About our studio</a></li>
+    <li><a href="#!">Lesson Informations</a></li>
+    <li><a href="#!">Schedules</a></li>
+    <li><a href="#!">Access</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper amber lighten-2">
+      <a href="#!" class="center brand-logo">dinacharya yoga</a>
+      <ul class="right">
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="large material-icons">dehaze</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+<div class="col s1 m3 l4"></div>
+    <div class="col s10 m6 l4">
+      <div class="card small">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img src="../images/sample-1.jpg" /> <span class="card-title">Access</span>
+        </div>
+        <div class="card-content">
+          
+          <p>ここに文章を埋め込む</p>
+        </div>
+      </div>
+    </div>
+<div class="col s1 m3 l4"></div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer amber lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">dinacharya yoga stuio</h5>
+          <p class="grey-text text-lighten-4">subtitle (if there is any...)</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">About out studio</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Lesson Informations</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Schedules</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Access</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Blog</a>(外部サイトへ移動します)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">(C) 2014 Copyright dinacharya yoga studio</div>
+    </div>
+  </footer>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>
