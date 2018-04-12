@@ -5,6 +5,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link rel="stylesheet" href="css/custom.css" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!--Let browser know website is optimized for mobile-->
@@ -14,34 +15,12 @@
 </head>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('.carousel.carousel-slider').carousel({
-            numVisible : 1,
-            fullwidth : true,
-            indicators : true
-        });
-        $(".dropdown-trigger").dropdown({
-            constrainWidth : false
-        });
+    $(document).ready(function(){
+        initCarousel();
+        initDropdown();
         setTimeout(autoplay, 7500);
     });
-    function autoplay() {
-        $('.carousel.carousel-slider').carousel('next');
-        setTimeout(autoplay, 7500);
-    }
 </script>
-<style type="text/css">
-.gold {
-  background-color: #E6B422; !important;
-}
-.brand-logo img{
-   max-width: 240px;
-   height: auto;
-}
-.custom-divider {
-  border-bottom: solid 10px #E6B422;
-}
-</style>
 
 <body>
 
@@ -54,10 +33,10 @@
   </ul>
   <nav>
     <div class="nav-wrapper white custom-divider">
-      <a href="#!" class="center brand-logo"><img src="images/logo-2.jpg" alt="dinacharya yoga" /></a>
+      <a href="index.html" class="center brand-logo"><img src="images/logo-2.jpg" alt="dinacharya yoga" /></a>
       <ul class="right">
         <!-- Dropdown Trigger -->
-        <li><a class="dropdown-trigger gold" href="#!" data-target="dropdown1"><i class="large material-icons">dehaze</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="large material-icons gold-icon">toc</i></a></li>
       </ul>
     </div>
   </nav>
@@ -135,7 +114,7 @@
           <p>三鷹にてヨガスタジオをやっています。詳細はこちら。</p>
         </div>
         <div class="card-action">
-          <a href="#">studioについて</a>
+          <a href="pages/introduction.html">studioについて</a>
         </div>
       </div>
     </div>
@@ -148,7 +127,7 @@
           <p>スタジオでは様々なヨガ教室を開催しています。各クラスの詳細については下記のリンク先を参照してください。</p>
         </div>
         <div class="card-action">
-          <a href="#">レッスンについて</a>
+          <a href="pages/lesson.html">レッスンについて</a>
         </div>
       </div>
     </div>
@@ -165,7 +144,7 @@
           <p>各クラスのスケジュールはこちらからご確認ください。</p>
         </div>
         <div class="card-action">
-          <a href="#">スケジュールへ</a>
+          <a href="pages/schedule.html">スケジュールへ</a>
         </div>
       </div>
     </div>
@@ -178,7 +157,7 @@
           <p>スタジオの場所はこちらからご確認ください。</p>
         </div>
         <div class="card-action">
-          <a href="#">地図を開く</a>
+          <a href="pages/access.html">地図を開く</a>
         </div>
       </div>
     </div>
@@ -186,7 +165,7 @@
   </div>
 
   <!-- footer -->
-  <footer class="page-footer amber lighten-2">
+  <footer class="page-footer gold">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -196,10 +175,10 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">About out studio</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Lesson Informations</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Schedules</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Access</a></li>
+            <li><a class="grey-text text-lighten-3" href="pages/introduction.html">About out studio</a></li>
+            <li><a class="grey-text text-lighten-3" href="pages/lesson.html">Lesson Informations</a></li>
+            <li><a class="grey-text text-lighten-3" href="pages/schedule.html">Schedules</a></li>
+            <li><a class="grey-text text-lighten-3" href="pages/access.html">Access</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Blog</a>(外部サイトへ移動します)</li>
           </ul>
         </div>
@@ -207,11 +186,12 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        (C) 2014 Copyright dinacharya yoga studio
+        (C) 2018 Copyright dinacharya yoga studio
       </div>
     </div>
   </footer>
   <!--JavaScript at end of body for optimized loading-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>
